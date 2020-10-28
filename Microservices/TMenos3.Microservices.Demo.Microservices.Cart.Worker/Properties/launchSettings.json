@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "TMenos3.Microservices.Demo.Microservices.Cart.Worker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

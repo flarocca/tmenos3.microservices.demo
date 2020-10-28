@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TMenos3.Microservices.Demo.Monolith.Database\TMenos3.Microservices.Demo.Monolith.Database.csproj" />
+    <ProjectReference Include="..\TMenos3.Microservices.Demo.Monolith.Prices\TMenos3.Microservices.Demo.Monolith.Prices.csproj" />
+    <ProjectReference Include="..\TMenos3.Microservices.Demo.Monolith.Stock\TMenos3.Microservices.Demo.Monolith.Stock.csproj" />
+  </ItemGroup>
+
+</Project>

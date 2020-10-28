@@ -1,0 +1,35 @@
+﻿@model TMenos3.Microservices.Demo.Monolith.Site.Models.ProductListViewModel
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Products</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Products) {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Description</td>
+            <td>@item.Price</td>
+            <td>@item.Stock</td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.Id})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
